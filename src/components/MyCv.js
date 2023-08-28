@@ -30,8 +30,10 @@ function MyCv () {
           <h3>Yasin ÇELİK</h3>
           <h6>{t ('electrical-engineer')}</h6>
           <a
-            href={`../../portfolio/assets/files/${i18n.language === 'tr' ? 'cv_tr.pdf' : 'cv_en.pdf'}`}
+            href={`https://YasinCelikSoftware.github.io/portfolio/assets/files/${i18n.language === 'tr' ? 'cv_tr.pdf' : 'cv_en.pdf'}`}
             download="Yasin_Celik_CV.pdf"
+            target="_blank"
+            rel="noreferrer"
           >
             <MainButton>{t ('download')}</MainButton>
           </a>
