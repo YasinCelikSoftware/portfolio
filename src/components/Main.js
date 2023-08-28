@@ -6,6 +6,7 @@ import ContactMe from './ContactMe';
 function Main () {
   useEffect (() => {
     document.title = `Yasin ÇELİK`;
+    window.scrollTo (0, 0);
   });
 
   return (

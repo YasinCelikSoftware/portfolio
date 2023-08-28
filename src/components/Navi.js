@@ -1,14 +1,6 @@
 import React, {useState} from 'react';
 import {useTranslation} from 'react-i18next';
-import {
-  Collapse,
-  Navbar,
-  NavbarToggler,
-  Nav,
-  NavItem,
-  NavLink,
-  NavbarText,
-} from 'reactstrap';
+import {Collapse, Navbar, Nav, NavItem, NavLink, NavbarText} from 'reactstrap';
 import '../assets/css/Navi.css';
 import {Link} from 'react-router-dom';
 import DescriptionIcon from '@mui/icons-material/Description';

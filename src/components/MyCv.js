@@ -15,6 +15,7 @@ function MyCv () {
 
   useEffect (() => {
     document.title = `Yasin ÇELİK | ${t ('myCv')}`;
+    window.scrollTo (0, 0);
   });
 
   return (

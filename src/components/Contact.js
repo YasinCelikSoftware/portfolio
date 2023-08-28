@@ -19,6 +19,7 @@ function Contact () {
 
   useEffect (() => {
     document.title = `Yasin ÇELİK | ${t ('contact')}`;
+    window.scrollTo (0, 0);
   }, []);
 
   const sendEmail = e => {

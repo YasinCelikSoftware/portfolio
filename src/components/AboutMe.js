@@ -11,6 +11,7 @@ function AboutMe () {
 
   useEffect (() => {
     document.title = `Yasin ÇELİK | ${t ('about')}`;
+    window.scrollTo (0, 0);
   });
 
   return (

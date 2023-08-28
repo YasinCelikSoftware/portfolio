@@ -2,6 +2,8 @@
   border-top: 1px solid #aeaeae;
   font-family: "Instrument Sans", sans-serif;
   color: #aeaeae;
+  position: relative;
+  z-index: 1;
 }
 
 .footer a {
