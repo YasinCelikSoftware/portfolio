@@ -22,7 +22,7 @@ function ContactMe () {
             <p className="contactme__p">{t ('contactme-p')}</p>
             <p className="contactme__p">{t ('contactme-p2')}</p>
             <Link to="/contact">
-              <MainButton>{t ('contacted')}</MainButton>;
+              <MainButton>{t ('contacted')}</MainButton>
             </Link>
           </div>
         </Row>

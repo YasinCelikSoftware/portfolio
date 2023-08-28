@@ -30,7 +30,7 @@ function Home (props) {
           <h1 className="home__h1 text-4xl">{t ('frontendev')}</h1>
           <div>
             <Link to="/about">
-              <MainButton>{t ('about')}</MainButton>;
+              <MainButton>{t ('about')}</MainButton>
             </Link>
           </div>
           <div className="color-ae mt-5">

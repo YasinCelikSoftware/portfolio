@@ -19,12 +19,19 @@ function Navi({changelanguage}) {
     setHamburgerChecked (!isHamburgerChecked);
   };
 
+  const brandToggle = () => {
+    setIsOpen (false);
+    setHamburgerChecked (false);
+  };
+
   const {t} = useTranslation ();
 
   return (
     <div>
       <Navbar expand="md" className="mt-3 navi px-3">
-        <Link to="/" className="navbar-brand">{t ('navBrand')}</Link>
+        <Link to="/" className="navbar-brand" onClick={brandToggle}>
+          {t ('navBrand')}
+        </Link>
         <Hamburger onClick={toggle} checked={isHamburgerChecked} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="m-auto" navbar>
