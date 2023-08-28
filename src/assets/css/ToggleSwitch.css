@@ -1,0 +1,65 @@
+.checkbox {
+  width: 75px;
+  height: 24px;
+  background-color: #d0d0d0;
+  border-radius: 30px;
+  position: relative;
+  color: white;
+  overflow: hidden;
+}
+
+.text__en {
+  color: black;
+}
+
+#checkbox_toggle {
+  display: none;
+}
+
+.checkbox .toggle {
+  width: 33.5px;
+  height: 20px;
+  position: absolute;
+  border-radius: 30px;
+  left: 5px;
+  cursor: pointer;
+  background: purple;
+  transition: 0.4s;
+  box-shadow: -0px -0px 10px #8983f7, -0px -0px 3px #8983f7;
+}
+
+.checkbox .slide {
+  width: 77px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  cursor: pointer;
+}
+
+.checkbox .slide .text {
+  font-size: 16px;
+  font-weight: 700;
+  z-index: 100;
+  cursor: pointer;
+}
+.text__tr {
+  padding-left: 6px;
+}
+.checkbox .slide .text:nth-child(3) {
+  padding-right: 6px;
+}
+
+.check:checked + .checkbox .slide .toggle {
+  transform: translateX(32px);
+  background: purple;
+  box-shadow: -0px -0px 10px #8983f7, -0px -0px 3px #8983f7;
+}
+
+.check:checked + .checkbox .slide .text__tr {
+  color: black !important;
+}
+
+.check:checked + .checkbox .slide .text__en {
+  color: white !important;
+}

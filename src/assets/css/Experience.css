@@ -1,0 +1,26 @@
+.experience__container {
+  background: radial-gradient(128.5% 107.13% at 50% 2.92%, transparent 37%, #9717f1 78.65%, #7e7e7e 100%);
+  border-radius: 20px;
+}
+
+.experience__p {
+  font-size: 1.25rem;
+  color: transparent;
+  background: rgb(255, 255, 255);
+  background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(224, 229, 236, 0.45) 18%);
+  -webkit-background-clip: text !important;
+}
+
+.experience__h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: transparent;
+  background: rgb(255, 255, 255);
+  background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(224, 229, 236, 0.6) 30%);
+  -webkit-background-clip: text !important;
+}
+
+.experience__company {
+  font-size: 0.9rem;
+  color: #dedede;
+}

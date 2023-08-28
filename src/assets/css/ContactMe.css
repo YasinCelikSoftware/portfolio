@@ -1,0 +1,36 @@
+.contactme {
+  height: 100vh;
+  position: relative;
+  background: url("../images/gradient.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.contactme__gradient {
+  opacity: 50%;
+  z-index: 0;
+}
+
+.contactme__info {
+  max-width: 48rem;
+  margin: auto;
+  z-index: 1;
+}
+
+.contactme__h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: transparent;
+  background: rgb(255, 255, 255);
+  background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(224, 229, 236, 0.6) 30%);
+  -webkit-background-clip: text !important;
+}
+
+.contactme__p {
+  font-size: 1.25rem;
+  color: transparent;
+  background: rgb(255, 255, 255);
+  background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(230, 230, 236, 0.6) 50%);
+  -webkit-background-clip: text !important;
+}

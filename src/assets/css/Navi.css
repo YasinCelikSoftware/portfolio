@@ -1,0 +1,64 @@
+.navi {
+  border: 1px solid rgb(48, 48, 52);
+  border-radius: 50px;
+  font-family: "Instrument Sans", sans-serif;
+  background: linear-gradient(hsla(0, 0%, 100%, 0.05), hsla(0, 0%, 100%, 0.02));
+  transition: all 0.5s ease-in-out;
+  z-index: 1;
+}
+
+.navi:hover {
+  background: linear-gradient(hsla(0, 0%, 100%, 0.05), rgba(79, 1, 103, 0.23));
+}
+
+.navi__languageButton:hover {
+  cursor: pointer;
+}
+
+.nav-link {
+  display: flex;
+
+  align-items: center;
+}
+
+.nav-link,
+.navi__languageButton,
+.navbar-brand {
+  color: #aeaeae;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-link:hover,
+.navi__languageButton:hover,
+.navbar-brand:hover {
+  color: white;
+}
+
+.navbar-brand {
+  font-family: "August";
+}
+
+@media only screen and (min-width: 768px) {
+  .nav__toggle {
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .nav-item svg {
+    margin-left: 0 !important;
+  }
+
+  .navbar-collapse .navbar-nav {
+    margin-bottom: 10px !important;
+    align-items: center;
+  }
+
+  .navi__languageButton {
+    margin: 0 !important;
+  }
+
+  .checkbox {
+    margin: auto;
+  }
+}

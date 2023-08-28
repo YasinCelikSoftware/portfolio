@@ -1,0 +1,48 @@
+.contact__form {
+  width: 50%;
+  margin: auto;
+}
+
+.contact__h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: transparent;
+  background: rgb(255, 255, 255);
+  background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(224, 229, 236, 0.6) 30%);
+  -webkit-background-clip: text !important;
+  margin-bottom: 2rem;
+}
+
+.contact__input {
+  color: #8707ff;
+  border: 2px solid #8707ff;
+  border-radius: 10px;
+  padding: 10px 25px;
+  background: transparent;
+  box-shadow: 2px 2px 15px #8707ff inset;
+}
+
+.contact__input:focus {
+  outline: none;
+  box-shadow: 2px 2px 15px #8707ff;
+}
+
+.contact__input::placeholder {
+  color: #8707ff;
+}
+
+.myButton .contact__svg {
+  transform: rotate(0deg);
+  margin-right: 1rem;
+  transition: transform 0.5s ease-in-out;
+}
+
+.myButton:hover .contact__svg {
+  transform: rotate(-90deg);
+}
+
+@media only screen and (max-width: 500px) {
+  form {
+    width: 100% !important;
+  }
+}

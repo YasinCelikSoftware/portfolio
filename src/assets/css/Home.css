@@ -1,0 +1,44 @@
+.home {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.home__gradient {
+  opacity: 70%;
+  z-index: 0;
+  bottom: 100px;
+}
+
+.home__info {
+  position: relative;
+  z-index: 1;
+}
+
+.home__h1 {
+  font-weight: 900;
+}
+
+.home__aboutMe {
+  width: 20vw;
+  border: 1px solid rgb(48, 48, 52);
+  border-radius: 50px;
+  background: linear-gradient(hsla(0, 0%, 100%, 0.05), hsla(0, 0%, 100%, 0.02));
+  outline: none;
+  height: 50px;
+  color: white;
+  transition: background 0.5s ease;
+}
+
+.home__aboutMe:hover {
+  background: linear-gradient(hsla(0, 0%, 100%, 0.05), rgba(79, 1, 103, 0.23));
+}
+
+.home__arrow {
+  color: white;
+  transform: rotate(135deg);
+}
+
+.home__underArrow {
+  width: 50px;
+}

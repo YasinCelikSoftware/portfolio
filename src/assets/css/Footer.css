@@ -1,0 +1,41 @@
+.footer {
+  border-top: 1px solid #aeaeae;
+  font-family: "Instrument Sans", sans-serif;
+  color: #aeaeae;
+}
+
+.footer a {
+  color: #aeaeae;
+}
+
+.footer__navLink {
+  margin-bottom: 0.5rem;
+}
+
+.footer__links {
+  text-align: right;
+}
+
+.footer__socialIcon {
+  height: 24px;
+}
+
+@media only screen and (max-width: 500px) {
+  .footer__links {
+    text-align: center;
+  }
+
+  .copyright {
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  .footer__social {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer__nav {
+    padding: 0 !important;
+  }
+}
