@@ -44,7 +44,7 @@
   }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 768px) {
   .nav-item svg {
     margin-left: 0 !important;
   }
