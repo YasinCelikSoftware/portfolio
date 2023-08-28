@@ -2,8 +2,6 @@ import React, {Fragment, useState} from 'react';
 import '../assets/css/Hamburger.css';
 
 function Hamburger({onClick, checked}) {
-  const [isChecked, setChecked] = useState (checked);
-
   const handleChange = e => {};
 
   return (
