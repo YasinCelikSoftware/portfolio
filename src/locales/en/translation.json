@@ -50,5 +50,7 @@
   "brc-2": "Error detection and repair of designed electronic cards",
   "brc-3": "Working with other teams for debugging",
   "academic": "Academic Background",
-  "download": "Download CV"
+  "download": "Download CV",
+  "message-success": "Email sent successfully.",
+  "message-sending": "Email is sending..."
 }

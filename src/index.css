@@ -46,3 +46,19 @@ ul {
   font-family: "August";
   src: url("./fonts/august.ttf");
 }
+
+.ajs-message {
+  border-radius: 10px !important;
+}
+
+.alertify-notifier .ajs-message.ajs-warning {
+  background-color: yellow !important;
+  color: black;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+}
+
+.alertify-notifier .ajs-message.ajs-success {
+  background-color: green !important;
+  color: white;
+}

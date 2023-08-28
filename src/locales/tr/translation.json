@@ -50,5 +50,7 @@
   "brc-2": "Tasarlanmış kartların hata tespiti ve onarımı",
   "brc-3": "Hata ayıklama için ekip çalışmaları",
   "academic": "Akademik Geçmiş",
-  "download": "Özgeçmişi İndir"
+  "download": "Özgeçmişi İndir",
+  "message-success": "E-posta başarıyla gönderildi.",
+  "message-sending": "E-posta gönderiliyor..."
 }
