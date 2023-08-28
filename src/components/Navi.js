@@ -15,7 +15,7 @@ function Navi({changelanguage}) {
   const [isHamburgerChecked, setHamburgerChecked] = useState (false);
 
   const toggle = () => {
-    setIsOpen (!isOpen);
+    if (window.innerWidth <= 769) setIsOpen (!isOpen);
     setHamburgerChecked (!isHamburgerChecked);
   };
 
