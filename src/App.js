@@ -21,7 +21,8 @@ function App () {
     <Container fluid>
       <Header changeLanguage={changeLanguage} />
       <Routes>
-        <Route path="*" element={<Main />} />
+        <Route path="/" element={<Main />} />
+        <Route path="/portfolio" element={<Main />} />
         <Route path="/my-cv" element={<MyCv />} />
         <Route path="/about" element={<AboutMe />} />
         <Route path="/contact" element={<Contact />} />
