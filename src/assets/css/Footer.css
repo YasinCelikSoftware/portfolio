@@ -20,6 +20,17 @@
   height: 24px;
 }
 
+.footer__socialIcon a,
+.footer__navLink a {
+  color: #aeaeae;
+  transition: 0.3s ease-in-out;
+}
+
+.footer__socialIcon:hover a,
+.footer__navLink:hover a {
+  color: white;
+}
+
 @media only screen and (max-width: 500px) {
   .footer__links {
     text-align: center;
