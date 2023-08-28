@@ -7,7 +7,7 @@
   font-size: 1.25rem;
   color: transparent;
   background: rgb(255, 255, 255);
-  background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(224, 229, 236, 0.45) 18%);
+  background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.6) 18%);
   -webkit-background-clip: text !important;
 }
 

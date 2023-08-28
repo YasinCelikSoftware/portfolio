@@ -13,7 +13,7 @@ function Footer () {
 
   return (
     <section className="footer">
-      <Container className="pt-5">
+      <Container className="pt-5 pb-4">
         <Row className="justify-content-between">
           <Col md="3" sm="12" className="copyright d-flex align-items-center">
             © Copyright 2023, Yasin ÇELİK
