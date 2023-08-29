@@ -20,6 +20,7 @@ function Contact () {
   useEffect (() => {
     document.title = `Yasin ÇELİK | ${t ('contact')}`;
     window.scrollTo (0, 0);
+    console.log (isFormValid (formData));
   }, []);
 
   const sendEmail = e => {
@@ -43,6 +44,15 @@ function Contact () {
         },
         error => {}
       );
+  };
+
+  const isFormValid = formData => {
+    const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    return (
+      formData.name.length < 3 ||
+      formData.message.length < 20 ||
+      !emailRegex.test (formData.email)
+    );
   };
 
   const handleChange = e => {
@@ -86,7 +96,11 @@ function Contact () {
             onChange={handleChange}
             value={formData.message}
           />
-          <MainButton className="contact__myButton" type="submit">
+          <MainButton
+            className="contact__myButton"
+            type="submit"
+            disabled={isFormValid (formData)}
+          >
             <SendIcon className="contact__svg" />{t ('send')}
           </MainButton>
         </form>
