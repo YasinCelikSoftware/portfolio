@@ -33,7 +33,7 @@ function Home (props) {
               <MainButton>{t ('about')}</MainButton>
             </Link>
           </div>
-          <div className="color-ae mt-5">
+          <div className="color-ae mt-5 home__underArrowDiv">
             <a href="#experiences" className="home__arrow">
               <img
                 className="animate-bounce home__underArrow"

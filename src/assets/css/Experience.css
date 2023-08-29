@@ -42,3 +42,11 @@
   width: 100%;
   border-radius: 50%;
 }
+
+@media only screen and (min-width: 768px) {
+  .experience {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+  }
+}
