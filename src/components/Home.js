@@ -8,7 +8,7 @@ import AutoAwesomeOutlinedIcon from '@mui/icons-material/AutoAwesomeOutlined';
 import KeyboardDoubleArrowDownIcon
   from '@mui/icons-material/KeyboardDoubleArrowDown';
 import MainButton from './MainButton';
-import underArrow from '../assets/images/underarrow.svg';
+import underArrow from '../assets/images/logo.svg';
 import {Link} from 'react-router-dom';
 
 function Home (props) {
