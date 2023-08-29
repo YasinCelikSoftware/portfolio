@@ -9,6 +9,7 @@ import CallOutlinedIcon from '@mui/icons-material/CallOutlined';
 import HomeIcon from '@mui/icons-material/Home';
 import ToggleSwitch from './ToggleSwitch';
 import Hamburger from './Hamburger';
+import logo from '../assets/images/logo.svg';
 
 function Navi({changelanguage}) {
   const [isOpen, setIsOpen] = useState (false);
@@ -30,7 +31,7 @@ function Navi({changelanguage}) {
     <div>
       <Navbar expand="md" className="mt-3 navi px-3">
         <Link to="/" className="navbar-brand" onClick={brandToggle}>
-          {t ('navBrand')}
+          <img className="navi__logo" src={logo} alt="logo" />
         </Link>
         <Hamburger onClick={toggle} checked={isHamburgerChecked} />
         <Collapse isOpen={isOpen} navbar>
@@ -64,9 +65,11 @@ function Navi({changelanguage}) {
             </NavItem>
 
           </Nav>
-          <NavbarText className="me-3 navi__languageButton">
-            <ToggleSwitch changelanguage={changelanguage} />
-          </NavbarText>
+          <div className="navi__langButtonDiv">
+            <NavbarText className="me-3 navi__languageButton">
+              <ToggleSwitch changelanguage={changelanguage} />
+            </NavbarText>
+          </div>
         </Collapse>
       </Navbar>
     </div>
