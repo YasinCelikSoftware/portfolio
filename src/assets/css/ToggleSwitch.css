@@ -1,63 +1,67 @@
-.checkbox {
-  width: 75px;
-  height: 24px;
-  background-color: #aeaeae;
-  border-radius: 30px;
+/* The switch - the box around the slider */
+.switch {
+  font-size: 14px;
   position: relative;
-  color: white;
-  overflow: hidden;
+  display: inline-block;
+  width: 2.75em;
+  height: 1.25em;
 }
 
-.text__en {
-  color: black;
-}
-
-#checkbox_toggle {
-  display: none;
-}
-
-.checkbox .toggle {
-  width: 33.5px;
-  height: 20px;
+.switch:after {
+  content: "EN";
   position: absolute;
-  border-radius: 30px;
-  left: 5px;
+  right: -30px;
+  color: white;
+  z-index: 5;
+}
+
+.switch:before {
+  content: "TR";
+  position: absolute;
+  left: -30px;
+  color: white;
+  z-index: 5;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  background-color: transparent;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
   cursor: pointer;
-  background: purple;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: linear-gradient(120deg, #234567, #781223);
+  transition: 0.4s;
+  border-top-left-radius: 13px;
+  border-bottom-right-radius: 13px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 1em;
+  width: 1em;
+  border-top-left-radius: 11px;
+  border-bottom-right-radius: 11px;
+  left: 0.25em;
+  bottom: 0.1em;
+  background-color: #dde4eb;
   transition: 0.4s;
 }
 
-.checkbox .slide {
-  width: 77px;
-  height: 24px;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  cursor: pointer;
+input:checked + .slider {
+  background-color: transparent;
 }
 
-.checkbox .slide .text {
-  font-size: 16px;
-  font-weight: 700;
-  z-index: 100;
-  cursor: pointer;
-}
-.text__tr {
-  padding-left: 6px;
-}
-.checkbox .slide .text:nth-child(3) {
-  padding-right: 6px;
-}
-
-.check:checked + .checkbox .slide .toggle {
-  transform: translateX(32px);
-  background: purple;
-}
-
-.check:checked + .checkbox .slide .text__tr {
-  color: black !important;
-}
-
-.check:checked + .checkbox .slide .text__en {
-  color: #fff !important;
+input:checked + .slider:before {
+  transform: translateX(1.2em);
 }

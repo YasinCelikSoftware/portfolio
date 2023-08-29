@@ -1,23 +1,13 @@
 import React, {Fragment} from 'react';
 import '../assets/css/ToggleSwitch.css';
+import {changeLanguage} from 'i18next';
 
 function ToggleSwitch({changelanguage}) {
   return (
-    <Fragment>
-      <input
-        id="checkbox_toggle"
-        type="checkbox"
-        className="check"
-        onClick={() => changelanguage ()}
-      />
-      <div className="checkbox">
-        <label className="slide" htmlFor="checkbox_toggle">
-          <label className="toggle" htmlFor="checkbox_toggle" />
-          <label className="text text__tr" htmlFor="checkbox_toggle">TR</label>
-          <label className="text text__en" htmlFor="checkbox_toggle">EN</label>
-        </label>
-      </div>
-    </Fragment>
+    <label className="switch">
+      <input type="checkbox" onClick={() => changelanguage ()} />
+      <span className="slider" />
+    </label>
   );
 }
 
