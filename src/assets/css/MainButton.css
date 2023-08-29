@@ -117,6 +117,17 @@ strong {
   opacity: 0.5;
 }
 
+.myButton:disabled #stars::after,
+.myButton:disabled #stars::before {
+  display: none;
+}
+
+.myButton:disabled #container-stars,
+.myButton:disabled {
+  background-color: gray;
+  animation: none;
+}
+
 @keyframes animStar {
   from {
     transform: translateY(0);
