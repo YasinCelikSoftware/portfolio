@@ -1,11 +1,21 @@
 .experience__container {
-  background: radial-gradient(128.5% 107.13% at 50% 2.92%, transparent 37%, #9717f1 78.65%, #7e7e7e 100%);
-  border-radius: 20px;
+  /* background: radial-gradient(128.5% 107.13% at 50% 2.92%, transparent 37%, #9717f1 78.65%, #7e7e7e 100%);
+  border-radius: 20px; */
+  position: relative;
+}
+
+.experience__container .row {
+  position: relative;
+  z-index: 1;
+}
+
+.shadow-5px {
+  text-shadow: 1px 2px black;
 }
 
 .experience__p {
   font-size: 1.25rem;
-  color: transparent;
+  color: white;
   background: rgb(255, 255, 255);
   background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.6) 18%);
   -webkit-background-clip: text !important;
@@ -14,7 +24,7 @@
 .experience__h1 {
   font-size: 3rem;
   font-weight: 700;
-  color: transparent;
+  color: white;
   background: rgb(255, 255, 255);
   background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(224, 229, 236, 0.6) 30%);
   -webkit-background-clip: text !important;
@@ -23,4 +33,12 @@
 .experience__company {
   font-size: 0.9rem;
   color: #dedede;
+}
+
+.experience__moon {
+  position: absolute;
+  z-index: 0;
+  opacity: 0.3;
+  width: 100%;
+  border-radius: 50%;
 }
