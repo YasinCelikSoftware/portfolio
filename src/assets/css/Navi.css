@@ -34,8 +34,21 @@
   color: white;
 }
 
+.navi__langButtonDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .navbar-brand {
   font-family: "August";
+}
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+.navi__logo {
+  width: 30px;
 }
 
 @media only screen and (min-width: 768px) {
