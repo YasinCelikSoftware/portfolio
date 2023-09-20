@@ -14,6 +14,7 @@ function AboutMe () {
     window.scrollTo (0, 0);
   });
 
+  
   return (
     <div className="aboutme position-relative">
       <img className="aboutme__stars img-fluid" src={stars} alt="stars" />
